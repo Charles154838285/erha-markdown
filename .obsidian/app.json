@@ -1,0 +1,19 @@
+{
+  "alwaysUpdateLinks": true,
+  "showLineNumber": true,
+  "rightToLeft": false,
+  "newLinkFormat": "relative",
+  "newFileLocation": "root",
+  "attachmentFolderPath": "数据库/未命名",
+  "newFileFolderPath": "操作系统/操作系统-asset",
+  "showUnsupportedFiles": true,
+  "useMarkdownLinks": true,
+  "promptDelete": false,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
+}
