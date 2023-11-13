@@ -2876,7 +2876,60 @@ int main() {
 
 #### 4.4斜率优化
 
+**（是否有混合值）**
+
 ##### 古老的打字机
+
+![image-20231029212301973](./image3/image-20231029212301973.png)
+
+
+
+![image-20231029212349433](./image3/image-20231029212349433.png)
+
+![image-20231029213029901](./image3/image-20231029213029901.png)
+
+![image-20231029213246798](./image3/image-20231029213246798.png)
+
+![image-20231029213516984](./image3/image-20231029213516984.png)
+
+```C++
+#define MAX_N 1000000
+#define SQ(x) ((x) * (x))
+long long c[MAX_N + 5], sum[MAX_N + 5];
+long long dp[MAX_N + 5], f[MAX_N + 5];
+int q[MAX_N + 5], head, tail;
+long long n, M;
+ 
+double slope(int i, int j) {
+    return 1.0 * (f[i] - f[j]) / (sum[i] - sum[j]);
+}
+ 
+void set(int i, int j) {
+    dp[i] = dp[j] + SQ(sum[i] - sum[j]) + M;
+    f[i] = dp[i] + SQ(sum[i]);
+    return ;
+}
+ 
+int main() {
+    scanf("%lld%lld", &n, &M);
+    for (int i = 1; i <= n; i++) {
+        scanf("%lld", c + i);
+        sum[i] = sum[i - 1] + c[i];
+    }
+    head = tail = 0;
+    q[tail++] = 0;
+    for (int i = 1; i <= n; i++) {
+        while (tail - head >= 2 && slope(q[head + 1], q[head]) < 2 * sum[i]) head += 1;
+        set(i, q[head]);
+        while (tail - head >= 2 && slope(q[tail - 1], q[tail - 2]) > slope(i, q[tail - 1])) {
+            tail -= 1;
+        }
+        q[tail++] = i;
+    }
+    printf("%lld\n", dp[n]);
+    return 0;
+}
+```
 
 
 

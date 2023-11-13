@@ -1,0 +1,16 @@
+Result SearchBTree(BTree T, KeyType K)
+{   //在m阶B-树T中找关键字K，返回结果（pt,i,tag）。找到tag=1，
+    //pt所指结点中第i个关键字等于K；否则，tag=0，K插入位置应是
+    //pt所指结点中第i和第i+1个关键字之间。
+    p=T;  q=NULL;  found=FALSE;   i=0;  //初始化，p指待查点，q指其双亲
+    while ( p&& !found)                                  
+           {  n=p->keynum;                //在p->key[1..keynum]中找
+               i=Search(p, K);         //i使得：p->key[i]<=K<p->key[i+1]
+               if ( i>0 && p->key[i]==K)            //找到
+                    found=TRUE;
+               else
+                    { q=p; p=p->ptr[i];}                  //下移结点
+            }
+    if (found) return (p,i,1);                           //查找成功
+    else  return (q,i,0);
+}//SearchBTree

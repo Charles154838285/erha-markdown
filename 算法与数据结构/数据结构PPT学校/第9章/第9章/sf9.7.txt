@@ -1,0 +1,32 @@
+Status DeleteBST(BiTree &T, KeyType key)       //算法9.7
+{   //若二叉排序树T中存在关键字等于key的数据元素时，则删除该结点
+     //并返回TRUE；否则返回FALSE
+     if (!T)  return FALSE;
+     else
+           { if  EQ(key,T->data.key) 
+                    {return Delete(T);}
+              else  if  LT(key,T->data.key)
+                            return DeleteBST(T->lchild, key);
+                       else  return DeleteBST(T->rchild, key);
+              return  TRUE;
+           }
+}//DeleteBST   
+
+
+Void Delete(Bitree &p)     //算法9.8
+{   //从二叉排序树中删除结点p，并重接其左或右子树
+     if (!p->rchild)             //右子树为空，重接左子树
+          { q=p; p=p->lchild; free(q);}
+     else if ( !p->lchild)     //左子树为空，重接右子树
+                  { q=p; p=p->rchild; free(q);}
+             else                      //左、右子树均不空
+                  { q=p; s=p->lchild;
+                     while (s->rchild)           //找到左子树最大结点（最右端）
+                          { q=s; s=s->rchild;} //s指向被删除结点的前驱
+                     p->data=s->data;
+                     if ( q!=p ) q->rchild=s->lchild;  //重接*q的右子树
+                     else q->lchild=s->lchild;             //重接*q的左子树
+                     delete s;
+                  }
+}//Delete
+

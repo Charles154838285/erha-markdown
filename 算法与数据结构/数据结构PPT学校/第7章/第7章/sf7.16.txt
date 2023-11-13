@@ -1,0 +1,22 @@
+void  ShortestPath_FLOYD(MGraph G,PathMatrix &P[],DistanceMatrix &D)
+{   //用FLOYD算法求有向网G中各对顶点v和w之间的最短路径P[v][w]及    //其带权路径长度D[v][w]。若P[v][w][u]为真，则u是从v到w当前求得
+    //最短路径上的顶点
+     for (v=0;v<G,vexnum;++v)
+           for (w=0;w<G,vexnum;++w)
+                 {  D[v][w]=G.arcs[v][w];
+                     for (u=0;u<G,vexnum;++u)
+                           P[v][w][u]=FALSE;
+                     if (D[v][w]<INFINITY)
+                         {  P[v][w][v]=TRUE;
+                             P[v][w][w]=TRUE;
+                         }//if
+                 }//for
+           for (u=0;u<G.vexnum;u++)       // 将顶点u从0到n-1逐个加入测试
+                 for (v=0;v<G.vexnum;v++)    // 求v到w间的最短路径 
+                       for (w=0;w<G.vexnum;w++)
+                             if (D[v][u]+D[u][w]<D[v][w])   //从v经u到w的一条路径更短
+                                 {  D[v][w]=D[v][u]+D[u][w];
+                                     for (i=0;i<G,vexnum;++i)     //更新最短路径
+                                           P[v][w][i]=P[v][u][i]||P[u][w][i];
+                                 }//if
+}//ShortestPath_FLOYD

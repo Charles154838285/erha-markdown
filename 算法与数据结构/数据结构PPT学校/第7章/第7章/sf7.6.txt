@@ -1,0 +1,18 @@
+void BFSTraverse(Graph G,  Status (*Visit)(int v))
+{   for (v=0; v<G.vexnum; ++v)
+          visited[v] = FALSE;  //初始化访问标志
+     InitQueue(Q);       // 置空的辅助队列Q
+     for ( v=0;  v<G.vexnum;  ++v )
+          if ( !visited[v])                                   // v 尚未访问
+             { visited[v] = TRUE;  Visit(v);    // 访问u
+                EnQueue(Q, v);                          // v入队列
+                while (!QueueEmpty(Q))  
+                     {  DeQueue(Q, u);                 // 队头元素出队并置为u
+                         for (w=FirstAdjVex(G, u); w!=0; w=NextAdjVex(G,u,w))
+                              if ( ! visited[w])  
+                                 { visited[w]=TRUE;  Visit(w);
+                                    EnQueue(Q, w); // 访问的顶点w入队列
+                                  } // if
+                     } // while
+             } //if
+  } // BFSTraverse

@@ -1,0 +1,17 @@
+Status SearchBST (BiTree T, KeyType kval, BiTree f, BiTree &p )
+{   // 在根指针 T 所指二叉排序树中递归地查找其关键字等于 kval 的
+    //数据元素，若查找成功，则返回指针 p 指向该数据元素的结点，
+    //并返回函数值为 TRUE; 否则表明查找不成功，返回指针 p 指向
+    //查找路径上访问的最后一个结点，并返回函数值为FALSE, 指针
+    // f 指向当前访问的结点的双亲，其初始调用值为NULL
+    if (!T)
+        { p = f;  return FALSE; }  // 查找不成功
+    else  if ( EQ(kval, T->data.key) )
+                { p = T;  return TRUE; }  // 查找成功
+            else  if ( LT(kval, T->data.key)
+                         return SearchBST (T->lchild, kval, T, p );  
+                                      // 返回在左子树中继续查找的结果
+                    else
+                         return SearchBST (T->rchild, kval, T, p ); 
+                                     // 返回在右子树中继续查找的结果
+} // SearchBST
