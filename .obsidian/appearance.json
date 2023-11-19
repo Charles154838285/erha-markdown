@@ -4,8 +4,5 @@
   "theme": "moonstone",
   "baseFontSize": 15,
   "nativeMenus": true,
-  "translucency": false,
-  "textFontFamily": "宋体",
-  "showViewHeader": true,
-  "interfaceFontFamily": "宋体"
+  "translucency": false
 }

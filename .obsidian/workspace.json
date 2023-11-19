@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "338b8bc969f6da3a",
+        "id": "8dce025f75f16c23",
         "type": "tabs",
         "children": [
           {
-            "id": "6b95bc877bbd1f37",
+            "id": "ed6cbd464a038e26",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C++/C++ STL容器.md",
+                "file": "算法与数据结构/算法与数据结构（OJ3）.md",
                 "mode": "source",
                 "source": false
               }
@@ -64,35 +64,12 @@
               "type": "bookmarks",
               "state": {}
             }
-          },
-          {
-            "id": "e7a4bc625e22b582",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "C++/C++ STL容器.md"
-              }
-            }
-          },
-          {
-            "id": "cd43010fdcd7687d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "操作系统/计算机操作系统.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 214.5110321044922
+    "width": 200
   },
   "right": {
     "id": "78742a2c0a275b9f",
@@ -102,6 +79,35 @@
         "id": "7379e90e367b3187",
         "type": "tabs",
         "children": [
+          {
+            "id": "884a3c684ea0a95f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "算法与数据结构/算法与数据结构（OJ3）.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fade8179eb1eebb5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "算法与数据结构/算法与数据结构（OJ3）.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
           {
             "id": "0699d8d2b6635724",
             "type": "leaf",
@@ -114,6 +120,24 @@
             }
           },
           {
+            "id": "be7df024f3de996b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "算法与数据结构/算法与数据结构（OJ3）.md"
+              }
+            }
+          },
+          {
+            "id": "eeed8da2148f0809",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
             "id": "ab0e3ec638315a76",
             "type": "leaf",
             "state": {
@@ -122,59 +146,13 @@
                 "sortOrder": "frequency"
               }
             }
-          },
-          {
-            "id": "0f78aefd46870f33",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "C++/C++ STL容器.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "f8cd541b8aef26c7",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "C++/C++ STL容器.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "ef1c68d336d97c14",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {}
-            }
-          },
-          {
-            "id": "d882daf752a0fefb",
-            "type": "leaf",
-            "state": {
-              "type": "advanced-tables-toolbar",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 361.5,
-    "collapsed": true
+    "width": 333
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,59 +161,47 @@
       "switcher:打开快速切换": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "command-palette:打开命令面板": false
     }
   },
-  "active": "6b95bc877bbd1f37",
+  "active": "ed6cbd464a038e26",
   "lastOpenFiles": [
-    "C++/C++提高编程 .md",
-    "C++/C++ STL容器.md",
-    "C++/机房预约系统.md",
-    "AcWingBasicAlgorithmCourse-master/5动态规划/5动态规划.md",
-    "C++/C++ 常见STL汇总",
-    "AcWingBasicAlgorithmCourse-master/3搜索与图论/3搜索与图论模板.md",
-    "AcWingBasicAlgorithmCourse-master/4数学知识/AcWing868筛质数.md",
-    "AcWingBasicAlgorithmCourse-master/4数学知识/AcWing867分解质因数.md",
-    "AcWingBasicAlgorithmCourse-master/4数学知识/4数学知识题目与模板.md",
-    "MySQL-基础篇(1).pdf",
-    "数据库.pdf",
-    "数据库/MySQL/MySQL.pdf",
-    "数据库/数据库.md",
-    "数据库/MySQL/README.md",
-    "数据库/MYSQL语法总结版本.md",
-    "数据库/未命名/Pasted image 20231023211642.png",
-    "数据库/未命名/Pasted image 20231023205853.png",
-    "数据库/未命名/Pasted image 20231023170109.png",
-    "数据库/未命名/Pasted image 20231023163832.png",
-    "数据库/未命名/Pasted image 20231023163814.png",
-    "数据库/未命名/Pasted image 20231023163747.png",
-    "数据库/未命名/Pasted image 20231023163658.png",
-    "数据库/未命名/Pasted image 20231023163632.png",
-    "数据库/未命名",
-    "READ.md",
-    "数据库/MySQL/MySQL进阶篇.md",
-    "数据库/MySQL/MySQL基础篇.md",
-    "Git&GitHub笔记.pdf",
-    "2023-10-22.md",
-    "大变局/Pasted image 20231022150557.png",
-    "大变局/Pasted image 20231022150335.png",
-    "大变局",
-    "2023-09-30.md",
-    "操作系统/计算机操作系统.md",
-    "操作系统/操作系统PPT/~$第5章设备管理（无习题和作业）.ppt",
-    "C++/C++基础入门 .md",
-    "操作系统/操作系统PPT/~$第4章存储器管理.ppt",
-    "软件工程基础/软件工程下载的笔记/Software-Engineering-Notes/Chapter-04-过程模型/Chapter 4 过程模型Process Models fd63f7899930489c87ef2d9e58174036.md",
-    "计网/计算机网络---自顶而下-传输层.md",
-    "未命名.canvas",
-    "计网/计算机网络---自顶而下-网络层.md",
-    "操作系统/操作系统PPT/~$第4章存储器管理（无习题及作业）.ppt",
+    "2023-09-06.md",
+    "effective C++/More effective C++.md",
+    "CPP进阶/C++进阶.md",
+    "代码随想录白嫖/「代码随想录」动态规划专题精讲（v1.1）.pdf",
+    "未命名 1.canvas",
+    "网络安全/网络安全-php.md",
+    "effective C++/effective CPP/image-20230705163609818.png",
+    "effective C++/effective CPP/202210071733849.png",
+    "算法与数据结构/算法与数据结构（OJ4）.md",
     "算法与数据结构/算法与数据结构（OJ3）.md",
-    "AcWingBasicAlgorithmCourse-master/2数据结构/AcWing827双链表.md",
-    "AcWingBasicAlgorithmCourse-master/2数据结构/AcWing240食物链.md",
-    "AcWingBasicAlgorithmCourse-master/2数据结构/2数据结构题目与模板.md",
-    "AcWingBasicAlgorithmCourse-master/2数据结构/AcWing143最大异或对.md",
-    "未命名 1.canvas"
+    "算法与数据结构/算法与数据结构（OJ2）.md",
+    "算法与数据结构/动态规划专题-随想录.md",
+    "算法与数据结构/算法与数据结构(OJ).md",
+    "代码随想录八股文/算法篇.pdf",
+    "代码随想录八股文/前端篇.pdf",
+    "未命名.canvas",
+    "设计模式/笔记（pdf版）/设计模式-day01.pdf",
+    "数据库/Redis/原理篇/原理篇.md",
+    "原理篇.assets/1653984787383.png.md",
+    "原理篇.assets",
+    "数据库/数据库.md",
+    "操作系统/操作系统-asset/3e4c7b502660e092cbca932ed5adcfb9.png",
+    "Java-master/docs/Safety/5_点击劫持问题.md",
+    "Java-master/docs/Net/2_物理层.md",
+    "计网/assets/format,png.png",
+    "计网/assets/32ced2ab898e46ab9e70c1a26ff39b92.png",
+    "计网/assets/9b0e259a058e1e338ab3e50e728a2156.png",
+    "计网/计算机网络---自顶而下-概述.md",
+    "C++/机房预约系统.md",
+    "计网/计算机网络---自顶而下-数据链路层.md",
+    "计网/计算机网络---自顶而下-应用层.md",
+    "UML/UML.md",
+    "UML/UML-asset/5d050869491e37107eefd811dbc3ccdd.png",
+    "READ.md",
+    "CPP进阶/asset1-CPPupupup/format,png.png",
+    "代码随想录八股文/基础篇.pdf",
+    "软件架构/软件架构.md"
   ]
 }
