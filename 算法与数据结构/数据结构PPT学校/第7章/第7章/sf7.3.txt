@@ -1,0 +1,18 @@
+Status CreateDG(OLGraph &G)
+{   //采用十字链表存储表示，构造有向图G(G.kind=DG)
+    scanf(&G.vexnum, &G.arcnum, &G.IncInfo);//输入顶点数、弧数
+    for (i=0; i<G.vexnum; ++i)             //构造表头向量
+         { scanf(&G.xlist[i].data);           //输入顶点值
+            G.xlist[i].firstin=NULL;         //初始化指针
+            G.xlist[i].firstout=NULL;
+          }
+    for (k=0; k<G.acrnum; ++k)         //输入各弧并构造十字链表
+         { scanf(&v1, &v2);                     //输入一条弧的始点和终点
+            i=LocateVex(G, v1);  j=locateVex(G, v2);  //确定v1,v2在G中位置
+            p=(ArcBox*)malloc(sizeof(ArcBox));         //申请一个弧结点
+            *p={i, j, G.xlist[j].firstin, G.xlist[i].firstout, NULL}  //对弧结点赋值
+                    //{tailvex, headvex, hlink, tlink, info}
+            G.xlist[j].firstin=G.xlist[i].firstout=p; //完成在入弧和出弧链头的插入
+            if (InInfo) Input(*p->info);                   //若弧含有相关信息，则输入
+          }
+}//CreateDG

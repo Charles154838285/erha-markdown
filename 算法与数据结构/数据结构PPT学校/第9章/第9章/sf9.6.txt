@@ -1,0 +1,12 @@
+Status  InsertBST(BiTree &T, ElemType e)
+{   //当二叉排序树T中不存在关键字等于e.key的数据时,插入e并返回T,否F
+    if (!SearchBST(T, e.key, NULL, p)
+         { s=(BiTree)malloc(sizeof(BiTNode));
+            s->data=e; s->lchild=s->rchild=NULL;
+            if  (!p) T=s;
+            else if LT(e.key, p->data.key) p->lchild=s;
+                   else p->rchild=s;
+            return TRUE;
+          }
+     else return FALSE;
+} //InsertBST

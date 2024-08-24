@@ -1,0 +1,16 @@
+Status TransposeSMatrix(TSMatrix M, TSMatrix &T){
+       //采用三元组表存储表示，求稀疏矩阵M的转置矩阵T
+    T.mu=M.nu; T.nu=M.mu; T.tu=M.tu; //T的维数和非零元个数
+    if(T.tu){   	  //M存在非零元
+	  q=1;           //T的序号
+	  for(col=1;col<=M.nu;++col)  //扫描所有列
+ 	        for(p=1;p<=M.tu;++p)     //扫描每个三元组
+	             if(M.data[p].j == col)   //交换
+                                     {   T.data[q].i=M.data[p].j;
+		    T.data[q].j=M.data[p].i;
+		    T.data[q].e=M.data[p].e;
+		    ++q;
+                                      }
+                }
+    return OK;
+}//TransposeMatrix 

@@ -1,0 +1,21 @@
+typedef struct
+  {  int key;
+     int link;
+  }SD;
+typedef struct
+  {  int key;
+     float info;
+  }JD;
+
+int blocksrch(JD r[],SD nd[],int b,int k,int n)
+{  int i=1,j;                 //k为要查找的关键字值，b为索引表长度，n为块长度
+   while((k>nd[i].key)&&(i<=b)  i++;
+   if(i>b) {  printf("\nNot found");
+              return(0);
+           }
+   j=nd[i].link;
+   while((j<n)&&(k!=r[j].key)&&(r[j].key<=nd[i].key))
+      j++;
+   if(k!=r[j].key) { j=0; printf("\nNot found"); }
+   return(j);
+}
